@@ -33,11 +33,11 @@ app.post('/', function (req, res) {
     
     if ( result < 18.5 ){
         res.send("Your BMI is " + result + ". You're underweight according to the BMI.");
-    } else if ( result >= 18.5 && result < 25 ) {
+    } else if ( result < 25 ) {
         res.send("Your BMI is " + result + ". You're on your normal weight according to the BMI.");
-    } else if ( result >= 25 && result < 30 ) {
+    } else if ( result < 30 ) {
         res.send("Your BMI is " + result + ". You're overweight according to the BMI.");
-    } else if ( result >= 30 && result < 35 ) {
+    } else if ( result < 35 ) {
         res.send("Your BMI is " + result + ". You're obese according to the BMI.");
     } else if ( result >= 35 ) {
         res.send("Your BMI is " + result + ". You're extremely obese according to the BMI.");
